@@ -30,6 +30,7 @@ de acordo com dados chamados de "instance", que podem ajudá-lo identificar a or
 
 ##### Cache_signal
 Este tipo de comando apresenta os sinais em cache da API.
+Esta notificação compartilha todos os sinais armazenados, com exceção dos sinais concluídos. Ele tem geralmente este formato:
 
 Exemplo:
 
@@ -68,8 +69,7 @@ Exemplo:
 
 ```
 
-
-Cada sinal tem geralmente este formato: "1":{...}, onde "1" representa o ID do card, a qual é a chave, e dentro dessa chave existirão dados para renderizar o site.
+Onde "1" e "2" representam o card_id, a chave e dentro dessa chave haverão dados para renderizar o seu site.
 
 ##### Signal
 Este tipo de comando indica que houve modificações nos sinais, incluindo novos sinais, bem como sinais antigos modificados (que estão em situação de martingale). É importante salientar que as informações sobre "martingale" e "resultado" podem mudar ao longo do tempo.
